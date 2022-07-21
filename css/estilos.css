@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:montserrat;
+   
+    
+}
+body{
+    background-color: rgb(3, 1, 8);
+    height: 100vh;
+}
+
+.cajalogo{
+    width: 100;
+    height: 100;
+    object-fit: cover;
+}
+
+.navbar-brand{
+     color: aliceblue;
+}
+
+
+a li{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.icon-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(153, 147, 136);
+   
+}
+
+.titulo-base{
+    text-align: center;
+    font-size: 13px;
+}   
+
+footer{
+    display: flex;
+    max-width: auto;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 10vh;
+    /* background-color: rgb(0, 0, 0); */
+}
+section{
+    padding: 3rem;
+    margin: 3rem 2rem 3rem 2rem;
+}
+.player {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 300px;
+    background-image: transparent;
+    border-radius: 1rem;
+    color: white;
+    /* background-image: linear-gradient(#ffff00, orange); */
+    /* box-shadow: 2px 2px 1rem black;
+    max-width: 1280px; */
+    min-width: 320px;
+
+}
+
+
+/* controls */
+.controls>* {
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+
+.button {
+    background-color: transparent;
+    border: none;
+
+
+}
+
+.button i {
+    font-size: 2rem;
+    color: rgb(59, 59, 59);
+
+}
+
+.ghost {
+    display: flex;
+    width: 20%;
+    height: 50%;
+    justify-content: center;
+}
+
+.titular  {
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: -4px;
+    
+}
+
+.titularh3{
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: -4px;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 5rem;
+    padding-bottom: 1rem; */
+}
