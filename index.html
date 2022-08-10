@@ -7,8 +7,10 @@
     <title>Repro</title>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,900;1,400;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,900;1,400;1,900&display=swap"
+        rel="stylesheet">
 
 
     <!-- ------estilo aos libreria-------- -->
@@ -21,8 +23,8 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
-<body>
-    <header>  
+<body class="fondex">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #03031300;">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -65,36 +67,55 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="section">
+    <main >
+        <section>
 
-            <div class="contenedor">
+            <div class="contenedor-uno">
                 <h1 data-aos="fade-down" class="titular">KWS</h1>
                 <h3 data-aos="fade-down" class="titular">products</h3>
+                <button class="btn ubicacion" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom"> <i class="fa-regular fa-circle-play"></i> </button>
+                <img class="cajalogo" src="img/LOGO-RDN-2.png" alt="LOGO-RDN3">
                 <div>
                     <div class="player">
-                        <img class="cajalogo" src="img/LOGO-RDN3.png" alt="LOGO-RDN3">
+                     
                         <audio class="stream" src="https://radiostreamingserver.com.ar/proxy/rdn/stream"></audio>
-                        <nav class="controls">
-                            <button class="button play">
-                                <i class="fas fa-play"></i>
-                            </button>
-                            <button class="button stop">
-                                <i class="fas fa-stop"></i>
-                            </button>
-                            <button class="button ventana">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-                        </nav>
+                       
                     </div>
                 </div>
-           
+
         </section>
-<section class="portaVideos">
 
+        <modal>
+            
 
-</section>
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">radio de las naciones</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                   
+                    <nav class="controls">
+                        <img class="cajalogo2" src="img/LOGO-RDN3.png" alt="LOGO-RDN3">
+                        <button class="play">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="stop">
+                            <i class="fas fa-stop"></i>
+                        </button>
+                        <button class="button ventana">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                            
+                    </nav>
+                </div>
+            </div>
 
+        </modal>
     </main>
+
     <footer>
         <div>
             <div>
@@ -113,19 +134,20 @@
     </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-<script>
-    AOS.init();
-</script>
+    <script>
+        AOS.init();
+    </script>
 
 
-<script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
